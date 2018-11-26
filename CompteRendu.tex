@@ -1,0 +1,64 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{fullpage}
+\usepackage{xspace}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{url}
+
+
+\lstset{basicstyle=\small\tt,
+  keywordstyle=\bfseries\color{Orchid},
+  stringstyle=\it\color{Tan},
+  commentstyle=\it\color{LimeGreen},
+  showstringspaces=false}
+
+\title{\textbf{TP-Analyse Fonctionelle}}
+\author{Victor Bros \and Lavainne Remy}
+\date{\oldstylenums{07}/\oldstylenums{11}/\oldstylenums{2018}}
+
+%--------------------Indention
+\setlength{\parindent}{1cm}
+
+\begin{document}
+%--------------------Title Page
+\maketitle
+\underline{Exercice 3}
+\bigbreak
+1) On pose $\displaystyle f= \sum_{n \in \mathbb{Z}} f_n \delta_{na} \,\, \in D(\mathbb{R})$ avec $f_n$ N-périodique.
+On pose $\displaystyle d = \sum_{k=0}^{3} \frac{1}{4}\delta_{ka} \,\, \in \mathcal{E}'(\mathbb{R})$ et
+$\displaystyle g = f \ast d = \sum_{n \in \mathbb{Z}} g_n \delta_{na}$.
+\newline
+On a $\displaystyle \forall \varphi \in D(\mathbb{R})$ 
+\begin{equation}
+    \begin{aligned}
+        <g,\varphi> &= <f\ast d, \varphi> \\
+                    &= <f_{t},<d_{u},\varphi(t+u)>>\\
+                    &= <f, \displaystyle{\sum_{k=0}^3 \frac{1}{4} \varphi(ka+.)}>\\
+                    &= \displaystyle{\sum_{n \in \mathbb{Z}} \frac{f_n}{4} \sum_{k=0}^{3} \varphi((k+n)a)}\\
+                    &=\displaystyle{\sum_{k=0}^{3} \sum_{n \in \mathbb{Z}} \frac{f_n}{4} \varphi((k+n)a)}\\
+                    &=\displaystyle{\sum_{k=0}^{3} \sum_{n \in \mathbb{Z}} \frac{f_{n-k}}{4} \varphi(na)}\\
+                    &=\displaystyle{\sum_{n \in \mathbb{Z}} \varphi(na) \sum_{k=0}^{3} \frac{f_{n-k}}{4}}
+    \end{aligned}
+\end{equation}
+On a donc $\displaystyle g_n = \sum_{k=0}^{3} \frac{f_{n-k}}{4}$ qui est donc N-périodique car $f_n$ est N-périodique.
+\newline
+$\forall \varphi \in D(\mathbb{R})$
+\begin{equation}
+    \begin{aligned}
+        <g,\varphi> &= \displaystyle{\sum_{n \in \mathbb{Z}} \sum_{k=0}^{3} \frac{f_{n-k}}{4} \varphi(na)}\\
+                    &= \displaystyle{\sum_{k=0}^{3} \sum_{n \in \mathbb{Z}} \frac{f_{n-k}}{4} \varphi(na)}\\
+                    &= \displaystyle{\sum_{k=0}^{3} \sum_{n \in \mathbb{Z}} \frac{f_{n+N-k}}{4} \varphi((n+N)a)}\\
+                    &= <g, \tau_{-Na}\varphi>\\
+                    &= <\tau_{Na}g,\varphi>
+    \end{aligned}
+\end{equation}
+On a donc que g est Na-périodique.
+
+\end{document}
