@@ -30,16 +30,31 @@
 %--------------------Title Page
 \maketitle
 \underline{Exercice 1}
+\bigbreak
+1) D'après l'exercice I de la feuille de TD 5,
+\newline
+comme $\widehat{f} \in L^{2}(\mathbb{R})$ (car $supp(\widehat{f}) \subset [-\lambda_{c},\lambda_{c}]$ support compact),
+\newline
+le théorème de Shannon s'applique sous la condition  \fbox{$ a < \frac{1}{2\lambda_{c}}$} pour obtenir une reconstruction parfaite du signal.
 
-1) On regarde
+\bigbreak
+2) pour $f_{0}=\frac{F_0}{F_e}$ et $N=15$, on a
+\begin{equation}
+    \begin{aligned}
+        S_{N}(\lambda) &= \displaystyle{a\sum_{k=-N}^{N-1} f(na) e^{-2i\pi na\lambda}}\\
+                       &= \displaystyle{a\sum_{k=-15}^{14} e^{2i\pi (f_0 -\frac{\lambda}{F_e}) n}} \\
+                       &= \fbox{\displaystyle{\frac{1}{F_e} \frac{e^{-30i\pi (f_0 -\frac{\lambda}{F_e}) } - e^{30i\pi (f_0 -\frac{\lambda}{F_e}) }}{1-e^{2i\pi (f_0 -\frac{\lambda}{F_e})}}}}\\
+    \end{aligned}
+\end{equation}
 
+\bigbreak
 \underline{Exercice 3}
 \bigbreak
 1) On pose $\displaystyle f= \sum_{n \in \mathbb{Z}} f_n \delta_{na} \,\, \in D(\mathbb{R})$ avec $f_n$ N-périodique.
 On pose $\displaystyle d = \sum_{k=0}^{3} \frac{1}{4}\delta_{ka} \,\, \in \mathcal{E}'(\mathbb{R})$ et
 $\displaystyle g = f \ast d = \sum_{n \in \mathbb{Z}} g_n \delta_{na}$.
 \newline
-On a $\displaystyle \forall \varphi \in D(\mathbb{R})$ 
+On a $\displaystyle \forall \varphi \in D(\mathbb{R})$
 \begin{equation}
     \begin{aligned}
         <g,\varphi> &= <f\ast d, \varphi> \\
@@ -65,13 +80,91 @@ $\forall \varphi \in D(\mathbb{R})$
 \end{equation}
 On a donc que g est Na-périodique.
 \bigbreak
-2) On sait que $g_n$ et $f_n$ sont N-périodiqe. On peut donc calculer g en calculant N valeurs consécutives de $g_n$.
-On calcule les $g_n$ pour $ n \in \left[ 0:N-1 \right]$ grace  la TFD :$\widehat{g_n} = \widehat{(f * d)_n}$
-On a donc $\widehat{g_n} = \widehat{f_n}\widehat{d_n}$ en prenant la TFD inverse on peut obtenir $g_n$ 
+2) On sait que $g_n$ et $f_n$ sont N-périodique. On peut donc calculer g en calculant N valeurs consécutives de $g_n$.
+On calcule les $g_n$ pour $ n \in \left[ 0:N-1 \right]$ grâce  la TFD :$\widehat{g_n} = \widehat{(f * d)_n}$
+On a donc $\widehat{g_n} = \widehat{f_n}\widehat{d_n}$ en prenant la TFD inverse on peut obtenir $g_n$
 
 
 4) On a $\widehat{g_n} = \widehat{f_n}\widehat{d_n}$ donc si $\widehat{d}$ ne s'annule sur aucune de ses composantes
 on a : $\widehat{f_n} = \frac{\widehat{f_n}}{\widehat{d_n}}$
 
-5) 
+5)
+
+
+\bigbreak
+\underline{Exercice 4}
+\bigbreak
+
+1) Pour $H(\lambda) = \chi_{[-1/4,1/4]}(\lambda), \forall \lambda \in [-1/2,1/2[$,
+\newline
+Soit $n \in \mathbb{Z}$
+\begin{equation}
+    \begin{aligned}
+        h_n &= \displaystyle{\int_{-1/2}^{1/2} H(\lstset{\lambda}) e^{2i \pi n \lambda} \, \mathrm{d} \lambda}\\
+            &= \displaystyle{\int_{-1/4}^{1/4} H(\lstset{\lambda}) e^{2i \pi n \lambda} \, \mathrm{d} \lambda}\\
+            &= \displaystyle{\Bigg[ \frac{e^{2i \pi n \lambda}}{2i \pi n} \Bigg] ^{1/4}_{-1/4}}\\
+            &= \displaystyle{\frac{e^{i\pi n/2} -e^{-i\pi n/2}}{2i\pi n}}\\
+            &= \fbox{\displaystyle{\frac{sinc(n\pi /2)} {2}}}
+    \end{aligned}
+\end{equation}
+\bigbreak
+
+2) Pour $N = 15$, on réalise le décalage d'indice suggéré pour obtenir une version réalisable du filtre:
+\newline
+\begin{equation}
+    \begin{aligned}
+        H_n^*(\lambda) &= H_n(\lambda) e^{-2i \pi \frac{N-1}{2}\lambda}\\
+        H_n^*(\lambda) &= h_0 + \sum_{k=1}^{(N-1)/2} h_n e^{-2i\pi n \lambda} +\sum_{k=1}^{(N-1)/2} h_{-n} e^{2i\pi n \lambda}\\
+    \end{aligned}
+\end{equation}
+Par parité du sinus cardinal $h_n=h_{-n}$,
+\begin{equation}
+    \begin{aligned}
+    H_n^*(\lambda) &= \sum_{k=1}^{(N-1)/2} 2 h_n cos(2\pi n \lambda) \in \mathbb{R}\\
+\end{aligned}
+\end{equation}
+i.e.
+\begin{equation}
+    \begin{aligned}
+    arg(H_n(\lambda)) &= arg(e^{2i \pi \frac{N-1}{2}\lambda})\\
+                      &= \fbox{2\pi \frac{N-1}{2}\lambda}\\
+    |H_n(\lambda)| &= \sum_{k=1}^{(N-1)/2} 2 h_n cos(2\pi n \lambda)
+    \end{aligned}
+\end{equation}
+
+\bigbreak
+3) En reprenant le calcul de la question 1),
+\begin{equation}
+    \begin{aligned}
+    \Tilde{h_n} &= \displaystyle{\int_{-1/2}^{1/2} H(\lstset{\lambda}) e^{(2n-1) i\pi \lambda} \, \mathrm{d} \lambda}\\
+                &= \fbox{\displaystyle{\frac{sinc((2n-1)\pi /4)} {2}}}
+    \end{aligned}
+\end{equation}
+on conserve les $N$ valeurs de $\Tilde{h_n}$ en construisant une version réalisable du filtre en décalant les valeurs:
+\begin{equation}
+    \begin{aligned}
+        H_n^*(\lambda) &= H_n(\lambda) e^{-2i \pi (\frac{N}{2}-1)\lambda}\\
+    \end{aligned}
+\end{equation}
+En reprenant le calcul de 2),
+\begin{equation}
+    \begin{aligned}
+    H_n^*(\lambda) &= \sum_{k=1}^{(N-1)/2} 2 \Tilde{h_n} cos(2\pi n \lambda) \in \mathbb{R}\\
+\end{aligned}
+\end{equation}
+i.e.
+\begin{equation}
+    \begin{aligned}
+    arg(H_n(\lambda)) &= arg(e^{2i \pi (\frac{N}{2}-1)\lambda})\\
+                      &= \fbox{2i \pi (\frac{N}{2}-1)\lambda}\\
+    |H_n(\lambda)| &= \sum_{k=1}^{(N-1)/2} 2 \Tilde{h_n} cos(2\pi n \lambda)
+    \end{aligned}
+\end{equation}
+
+\bigbreak
+
+4) Ainsi, pour $h_n$ défini, on a montré par 2) et 3) en fonction de la parité de $P$, que par les décalages d'indice des $h_n$ et modification si $P$ est paire, il est possible de se ramener par parité de $h_n e^{-2i\pi n \lambda}$ à une somme réelle. Il ne reste donc comme phase de la transformée de Fourier que le décalage d'indice de la somme qui correspond à une fonction linéaire de $\lambda$. Le filtre ainsi défini est à phase linéaire.
+
+
+
 \end{document}
