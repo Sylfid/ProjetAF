@@ -19,7 +19,7 @@ for i=1:40
     end
 end
 fonctionDebut = ifft(fft(resultat)./dfft);
-plot(fonctionDebut);
+plot(resultat);
 plot(f,'r');
 
 endfunction
