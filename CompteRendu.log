@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.22)  26 NOV 2018 14:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.22)  27 NOV 2018 09:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -628,36 +628,241 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 31.
- [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
-CompteRendu.aux) ) 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.46 ...{1-e^{2i\pi (f_0 -\frac{\lambda}{F_e})}}}}
+                                                  \\
+? 
+! Extra }, or forgotten $.
+\fbox ...ox {\color@begingroup \kern \fboxsep {#1}
+                                                  \kern \fboxsep \color@endg...
+l.46 ...{1-e^{2i\pi (f_0 -\frac{\lambda}{F_e})}}}}
+                                                  \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.46 ...{1-e^{2i\pi (f_0 -\frac{\lambda}{F_e})}}}}
+                                                  \\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.46 ...{1-e^{2i\pi (f_0 -\frac{\lambda}{F_e})}}}}
+                                                  \\
+? 
+[1
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \lambda 
+l.103 ...tyle{\int_{-1/2}^{1/2} H(\lstset{\lambda}
+                                                  ) e^{2i \pi n \lambda} \, ...
+
+? 
+! Extra \endcsname.
+\KV@split ...csname \KV@prefix \@tempa \endcsname 
+                                                  \ifx \@tempc \relax \KV@er...
+l.103 ...tyle{\int_{-1/2}^{1/2} H(\lstset{\lambda}
+                                                  ) e^{2i \pi n \lambda} \, ...
+
+? 
+
+! Package keyval Error: \lambda  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 ...tyle{\int_{-1/2}^{1/2} H(\lstset{\lambda}
+                                                  ) e^{2i \pi n \lambda} \, ...
+
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \lambda 
+l.104 ...tyle{\int_{-1/4}^{1/4} H(\lstset{\lambda}
+                                                  ) e^{2i \pi n \lambda} \, ...
+
+? 
+! Extra \endcsname.
+\KV@split ...csname \KV@prefix \@tempa \endcsname 
+                                                  \ifx \@tempc \relax \KV@er...
+l.104 ...tyle{\int_{-1/4}^{1/4} H(\lstset{\lambda}
+                                                  ) e^{2i \pi n \lambda} \, ...
+
+? 
+
+! Package keyval Error: \lambda  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 ...tyle{\int_{-1/4}^{1/4} H(\lstset{\lambda}
+                                                  ) e^{2i \pi n \lambda} \, ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.107 ...{\displaystyle{\frac{sinc(n\pi /2)} {2}}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\fbox ...ox {\color@begingroup \kern \fboxsep {#1}
+                                                  \kern \fboxsep \color@endg...
+l.107 ...{\displaystyle{\frac{sinc(n\pi /2)} {2}}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.107 ...{\displaystyle{\frac{sinc(n\pi /2)} {2}}}
+                                                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.107 ...{\displaystyle{\frac{sinc(n\pi /2)} {2}}}
+                                                  
+? 
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.130 ...      &= \fbox{2\pi \frac{N-1}{2}\lambda}
+                                                  \\
+? 
+! Extra }, or forgotten $.
+\fbox ...ox {\color@begingroup \kern \fboxsep {#1}
+                                                  \kern \fboxsep \color@endg...
+l.130 ...      &= \fbox{2\pi \frac{N-1}{2}\lambda}
+                                                  \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.130 ...      &= \fbox{2\pi \frac{N-1}{2}\lambda}
+                                                  \\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.130 ...      &= \fbox{2\pi \frac{N-1}{2}\lambda}
+                                                  \\
+? 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \lambda 
+l.139 ...tyle{\int_{-1/2}^{1/2} H(\lstset{\lambda}
+                                                  ) e^{(2n-1) i\pi \lambda} ...
+
+? 
+! Extra \endcsname.
+\KV@split ...csname \KV@prefix \@tempa \endcsname 
+                                                  \ifx \@tempc \relax \KV@er...
+l.139 ...tyle{\int_{-1/2}^{1/2} H(\lstset{\lambda}
+                                                  ) e^{(2n-1) i\pi \lambda} ...
+
+? 
+
+! Package keyval Error: \lambda  undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...tyle{\int_{-1/2}^{1/2} H(\lstset{\lambda}
+                                                  ) e^{(2n-1) i\pi \lambda} ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.140 ...playstyle{\frac{sinc((2n-1)\pi /4)} {2}}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\fbox ...ox {\color@begingroup \kern \fboxsep {#1}
+                                                  \kern \fboxsep \color@endg...
+l.140 ...playstyle{\frac{sinc((2n-1)\pi /4)} {2}}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.140 ...playstyle{\frac{sinc((2n-1)\pi /4)} {2}}}
+                                                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.140 ...playstyle{\frac{sinc((2n-1)\pi /4)} {2}}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.159 ...  &= \fbox{2i \pi (\frac{N}{2}-1)\lambda}
+                                                  \\
+? 
+! Extra }, or forgotten $.
+\fbox ...ox {\color@begingroup \kern \fboxsep {#1}
+                                                  \kern \fboxsep \color@endg...
+l.159 ...  &= \fbox{2i \pi (\frac{N}{2}-1)\lambda}
+                                                  \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.159 ...  &= \fbox{2i \pi (\frac{N}{2}-1)\lambda}
+                                                  \\
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.159 ...  &= \fbox{2i \pi (\frac{N}{2}-1)\lambda}
+                                                  \\
+? 
+[3] [4] (./CompteRendu.aux) ) 
 Here is how much of TeX's memory you used:
- 5733 strings out of 493014
- 77067 string characters out of 6133336
- 149372 words of memory out of 5000000
- 9178 multiletter control sequences out of 15000+600000
+ 5734 strings out of 493014
+ 77074 string characters out of 6133336
+ 151372 words of memory out of 5000000
+ 9179 multiletter control sequences out of 15000+600000
  12911 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,9n,32p,244b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/
-cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
-10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
->
-Output written on CompteRendu.pdf (2 pages, 117542 bytes).
+ 40i,12n,32p,485b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvip
+s/cm-super/cm-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msbm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/s
+fbx1728.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfr
+m1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1
+200.pfb>
+Output written on CompteRendu.pdf (4 pages, 168072 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
